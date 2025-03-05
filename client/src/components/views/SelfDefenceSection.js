@@ -91,7 +91,7 @@ const SelfDefenseSection = () => {
           <option value="knee">Knee Strike</option>
           <option value="escape">Escape from Wrist Grab</option>
         </select>
-        <button onClick={playInstruction}>🔊 Play Instruction</button>
+        <button onClick={playInstruction}>🔊 Play Instruction.</button>
       </div>
     </div>
   );
