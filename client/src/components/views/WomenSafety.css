@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #f8f9fa; /* Light gray background */
   color: #444;
   font-size: 16px;
   display: flex;
@@ -17,6 +17,7 @@ body {
 
 .women-safety-container {
   width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,15 +27,15 @@ body {
 .header-title {
   font-size: 55px;
   font-weight: 700;
-  color: #6b4f94;
-  text-shadow: 3px 3px 8px rgba(110, 45, 145, 0.5);
-  padding: 15px 25px;
+  color: #fff;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px 40px;
   border-radius: 20px;
   margin-top: 40px;
   font-family: 'Lora', serif;
-  background: linear-gradient(90deg, rgba(106, 79, 148, 0.8), rgba(110, 45, 145, 0.7));
-  color: white;
+  background: linear-gradient(135deg, #6b4f94, #8e5a9e); /* Purple gradient */
   animation: fadeIn 2s ease-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .content-wrapper {
@@ -44,6 +45,7 @@ body {
   align-items: flex-start;
   margin-top: 60px;
   width: 100%;
+  gap: 30px;
 }
 
 .text-section {
@@ -59,7 +61,7 @@ body {
 }
 
 .text-section p {
-  color: #8e7b8c;
+  color: #666;
   line-height: 1.8;
   font-size: 18px;
   font-weight: 300;
@@ -79,12 +81,11 @@ body {
   width: 100%;
   max-width: 42%;
   height: 400px;
-  background: #a8c8d6;
+  background: linear-gradient(135deg, #a8c8d6, #8fb3c9); /* Soft blue gradient */
   color: #fff;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   padding: 25px;
-  margin-left: -20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -104,17 +105,17 @@ body {
   justify-content: space-between;
   width: 100%;
   margin-top: 50px;
+  gap: 20px;
 }
 
 .bottom-left, .bottom-right {
   width: 100%;
   max-width: 45%;
-  background: #e79b97;
+  background: linear-gradient(135deg, #e79b97, #d88a86); /* Soft red gradient */
   color: white;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
   animation: fadeInUp 2s ease-out forwards;
@@ -126,7 +127,6 @@ body {
 }
 
 .bottom-left {
-  background: #e79b97;
   height: 450px;
   display: flex;
   flex-direction: column;
@@ -143,9 +143,8 @@ body {
 }
 
 .bottom-right {
-  background: #d8c4a0;
+  background: linear-gradient(135deg, #d8c4a0, #c7b18e); /* Beige gradient */
   height: 250px;
-  margin-left: -20px;
 }
 
 .section-title {
@@ -162,7 +161,7 @@ h2 {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  color: #ddd;
+  color: #eee;
   margin-top: 10px;
 }
 
@@ -191,6 +190,7 @@ h2 {
 @media (max-width: 768px) {
   .header-title {
     font-size: 45px;
+    padding: 15px 30px;
   }
 
   .content-wrapper {
@@ -222,6 +222,7 @@ h2 {
 @media (max-width: 480px) {
   .header-title {
     font-size: 35px;
+    padding: 10px 20px;
   }
 
   .content-wrapper {

@@ -174,6 +174,8 @@ import HomeView from "./components/views/HomeView";
 
 import { initiateSocketConnection } from "./helpers/socketHelper";
 import SelfDefenseSection from "./components/views/SelfDefenceSection";
+import ComplaintForm from "./pages/ComplaintForm";
+import CallerInput from "./pages/CallerInput";
 
 function App() {
   initiateSocketConnection();
@@ -224,6 +226,8 @@ function App() {
           <Route path="/users/:id" element={<ProfileView />} />
           <Route path="/login" element={<LoginView />} />
           <Route path="/signup" element={<SignupView />} />
+          <Route path="/complaint-form" element={<ComplaintForm />} />
+          <Route path="/caller-input" element={<CallerInput />}/>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
